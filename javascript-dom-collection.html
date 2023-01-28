@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Javascript HTMl Dom</h2>
+        <p>Hello World!</p>
+        <p>Hello norway</p>
+        <p>Click the to change the color of all element.</p>
+        <button onclick="myfunction()">Try It!</button> </button>
+        <script>
+            function myfunction(){
+                const mycollection = document.getElementsByTagName("p");
+                for(let i=0; i < mycollection.length;i++){
+                    mycollection[i].style.color="red";
+                }
+            }
+        </script>
+    </body>
+</html>

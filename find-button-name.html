@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form id="frm1" action="/action_page.php">
+            <button id="btn1" name="subject" type="submit" value="HTMl">HTML</button>
+        </form>
+        <p>click the 'try it' button to display the name of the "HTML" button:</p> 
+        <button onclick="myFunction()"> Try it</button>
+        <p id="demo"></p>  
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("btn1").name;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>    
+    </body>
+</html>    
